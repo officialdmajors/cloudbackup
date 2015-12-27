@@ -1,0 +1,8 @@
+aaargh
+boto
+peewee
+byteformat
+pyyaml
+sh
+requests
+events

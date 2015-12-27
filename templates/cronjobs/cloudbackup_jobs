@@ -1,0 +1,7 @@
+# WARNING: This file is managed by Puppet. Changes to this file will be overwritten.
+# SCRIPT LOCATION        = '/etc/cron.d/cloudbackup_jobs'
+
+# Run daily CloudBackup
+15 20 * * * root /usr/lib/python2.6/site-packages/cloudbackup-1.0.01-py2.6.egg/cloudbackup/run_cloudbackup.py
+
+

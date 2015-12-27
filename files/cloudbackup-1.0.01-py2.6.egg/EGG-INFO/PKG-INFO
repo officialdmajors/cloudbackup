@@ -1,0 +1,45 @@
+Metadata-Version: 1.0
+Name: Cloudbackup
+Version: 0.01
+Summary: cloudbackup is a free software licensed backup framework written in Python. Works well on linux host. it provides a command line interface and a collection of other Python modules that helps you manage backups on Amazon S3/Glacier and OpenStack Swift. It should automatically compress(tar), encrypt (openssl using '-aes-256-cbc' cipher) and upload your files. Restore is also enabled(decrypt and decompress).
+Home-page: https://github.com/officialdmajors/cloudbackup
+Author: Ikechukwu 'Major' Umejiofor
+Author-email: umejioforimd@gmail.com
+License: GPL
+Description: =======
+        Cloudbackup
+        =======
+        
+        cloudbackup is a free software licensed backup framework written in Python. Works well on linux host. it provides a command line interface and a collection of other Python modules that helps you manage backups on Amazon S3/Glacier and OpenStack Swift. It should automatically compress(tar), encrypt (openssl using '-aes-256-cbc' cipher) and upload your files. Restore is also enabled(decrypt and decompress).
+        Collaborator and contributors are welcome.
+        
+        Features:
+
+
+
+        Overview
+        --------
+        
+        Cloudbackup command line tool
+        ~~~~~~~~~~~~~~~~~~~~~~~~~
+        
+        ::
+
+
+        Changelog
+        ---------
+
+        1.0.01
+        ~~~~~
+
+        -
+        
+        Contributors
+        ------------
+
+        
+        License (GPL)
+        -------------
+        
+        Copyright (c) 2015 Ikechukwu 'Major' Umejiofor
+

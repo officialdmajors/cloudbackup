@@ -1,0 +1,63 @@
+default:
+  access_key:   "<%= @access_key %>"
+  secret_key:   "<%= @secret_key %>"
+  public_keyid: "<%= @public_keyid %>"
+  gpg_key_dir:  "<%= gpg_key_dir %>"
+  compress: "<%= compress_backups %>"
+  <%- if @region_name != 'nil' -%>
+  region_name: "<%= @region_name %>"
+  <%- else -%>
+  region_name: "<%= @s3_bucket_region_name %>"
+   <%- end -%>
+  default_destination: "<%= @default_destination %>"
+  glacier_vault: "<%= @glacier_vault_name %>"
+  s3_bucket: "<%= @s3_bucket_name %>"
+  tmp_dir:   "<%= @backup_tmp_dir %>"
+  <%- if @glacier_backup == 'true' -%>
+###################################################
+profile_glacier:
+  compress: "<%= compress_backups %>"
+    <%- if @glacier_access_key  != 'nil' -%>
+  access_key: "<%= @glacier_access_key %>"
+    <%- else -%>
+  access_key: "<%= @access_key %>"
+    <%- end -%>
+    <%- if @glacier_secret_key  != 'nil' -%>
+  secret_key: "<%= @glacier_secret_key %>"
+    <%- else -%>
+  secret_key: "<%= @secret_key %>"
+    <%- end -%>
+    <%- if @glacier_vault_region_name != 'nil'  -%>
+  region_name: "<%= @glacier_vault_region_name %>"
+   <%- else -%>
+  region_name: <%= @region_name %>
+    <%- end -%>
+  default_destination: glacier
+  glacier_vault: "<%= @glacier_vault_name %>"
+  s3_bucket:     "<%= @s3_bucket_name %>"
+  tmp_dir:   "<%= @backup_tmp_dir %>"
+<%- end -%>
+<%- if @s3_backup == 'true' -%>
+###################################################
+profile_s3:
+  compress: "<%= compress_backups %>"
+    <%- if @s3_access_key  != 'nil' -%>
+  access_key: "<%= @s3_access_key %>"
+    <%- else -%>
+  access_key: "<%= @access_key %>"
+    <%- end -%>
+    <%- if @s3_secret_key  != 'nil' -%>
+  secret_key: "<%= @s3_secret_key %>"
+    <%- else -%>
+  secret_key: "<%= @secret_key %>"
+    <%- end -%>
+    <%- if @s3_bucket_region_name != 'nil'  -%>
+  region_name: "<%= @s3_bucket_region_name %>"
+   <%- else -%>
+  region_name: <%= @region_name %>
+    <%- end -%>
+  default_destination:  s3
+  glacier_vault: "<%= @glacier_vault_name %>"
+  s3_bucket:     "<%= @s3_bucket_name %>"
+  tmp_dir:   "<%= @backup_tmp_dir %>"
+<%- end -%>
