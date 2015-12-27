@@ -1,12 +1,12 @@
 cloudbackup
 -----------
-cloudbackup provides a command line interface for backups management in the cloud(Amazon S3, Amazon Glacier and Openshift swift ) on client hosts.
+cloudbackup provides a command line interface for backups management in the cloud(Amazon S3, Amazon Glacier and Openstack swift ) on client hosts.
 
 It is based on Bakthat Release v0.6.0 - which is an MIT licensed backup framework written in Python. 
 
 For more information on Bakthat - see: [Bakthat User Guide.](https://media.readthedocs.org/pdf/bakthat/latest/bakthat.pdf)
 
-cloudbackup - a puppet module, although based on bakthat, is a complete re-write and provide a means to backup files/folders to the cloud(Amazon S3, Amazon Glacier and Openshift swift ).
+cloudbackup - a puppet module, although based on bakthat, is a complete re-write and provide a means to backup files/folders to the cloud(Amazon S3, Amazon Glacier and Openstack swift ).
 
 Using cloudbackup as a puppet module.
 ----------------------------------------
